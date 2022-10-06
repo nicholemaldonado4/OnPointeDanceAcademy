@@ -1,0 +1,33 @@
+:root {
+  --purple: #5E27CD;
+  --magenta: #FF00FF;
+  --dark-grey: #262626;
+}
+
+.seperator {
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to right, var(--purple) 50%, var(--magenta) 100%);
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 1rem;
+  align-items:center;
+}
+
+.social-logo {
+  height: 1.3rem;
+  margin-left: 1rem;
+}
+
+footer .logo-name {
+  font-size: .9rem;
+  color: var(--dark-grey);
+  font-weight: 200;
+}
+
+footer a {
+  text-decoration: none;
+}

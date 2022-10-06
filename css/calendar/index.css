@@ -1,0 +1,77 @@
+:root {
+  --purple: #5E27CD;
+  --aqua-blue: #12D8D8;
+  --dark-aqua-blue: #06B2BF;
+  --light-grey: #F4F4F4;
+  --ff-main: "Roboto Flex", sans-serif;
+  --ff-title: "News Cycle", serif;
+}
+
+.banner {
+  width: auto;
+  max-width: 100%;
+  max-height: 400px;
+  height: 40%;
+  
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #F9F9F9;
+}
+
+h2 {
+  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vw;
+  font-family: var(--ff-title);
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
+}
+
+.calendar-sect {
+  display: block;
+  background: linear-gradient(to bottom, var(--purple) 50%, white 50%);
+}
+
+
+.mobile-calendar {
+  display: none;
+}
+
+.desktop-calendar {
+  display: block;
+  width: 75vw;
+  margin: 2rem auto;
+  height: 80vh;
+  border-style: none;
+}
+
+@media all and (max-width: 900px) {
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    width: 85vw;
+  }
+  
+  .desktop-calendar {
+    display: none;
+  }
+  
+  .mobile-calendar {
+    display: block;
+    width: 85vw;
+    margin: 2rem auto;
+    height: 40vh;
+    border-style: none;
+  }
+}
+
+@media all and (max-width: 650px) {
+}
